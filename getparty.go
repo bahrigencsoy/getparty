@@ -89,7 +89,7 @@ type Options struct {
 	AuthUser           string            `short:"u" long:"username" description:"basic http auth username"`
 	AuthPass           string            `long:"password" description:"basic http auth password"`
 	HeaderMap          map[string]string `short:"H" long:"header" value-name:"key:value" description:"arbitrary http header"`
-	InsecureSkipVerify bool              `long:"no-check-cert" description:"don't validate the server's certificate"`
+	InsecureSkipVerify bool              `long:"no-check-cert" default:"true" description:"don't validate the server's certificate"`
 	CertsFileName      string            `long:"certs-file" value-name:"certs.crt" description:"root certificates to use when verifying server certificates"`
 	Debug              bool              `long:"debug" description:"enable debug to stderr"`
 	Version            bool              `long:"version" description:"show version"`
